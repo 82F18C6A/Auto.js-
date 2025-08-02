@@ -73,7 +73,7 @@ function profileChange() {
     console.log(width, height);
 
     /*进入"我的"页面*/
-    click(width * 0.8, height * 0.96);
+    click(width * 0.9, height * 0.96);
     sleep(sleepTime)
 
     /*进入个人资料页面*/
