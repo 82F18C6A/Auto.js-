@@ -58,7 +58,7 @@ function saveImageToAnotherDirectory(sourcePath, targetDirectory) {
 
 /*模拟屏幕操作更换微信头像*/
 function profileChange() {
-    let sleepTime = 800;
+    let sleepTime = 600;
     /*启动微信*/
     if (app.launchPackage("com.tencent.mm")) {
         console.log("启动成功");
@@ -81,6 +81,12 @@ function profileChange() {
     sleep(sleepTime)
     /*进入头像选择界面*/
     click(width * 0.5, height * 0.1);
+    sleep(sleepTime)
+    // 点击右上角三个点
+    click(width * 0.95, height * 0.07);
+    sleep(sleepTime)
+    // 点击"从相册选择"
+    click(width * 0.5, height * 0.75);
     sleep(sleepTime)
     /*进入相册选择界面*/
     click(width * 0.5, height * 0.06);
